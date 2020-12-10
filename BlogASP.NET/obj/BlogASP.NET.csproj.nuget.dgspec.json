@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\!!!Projects\\BlogASP.NET\\BlogASP.NET\\BlogASP.NET.csproj": {}
+    "E:\\!!!Projects\\!BlogASP.NET Core\\BlogASP.NET\\BlogASP.NET.csproj": {}
   },
   "projects": {
-    "E:\\!!!Projects\\BlogASP.NET\\BlogASP.NET\\BlogASP.NET.csproj": {
+    "E:\\!!!Projects\\!BlogASP.NET Core\\BlogASP.NET\\BlogASP.NET.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\!!!Projects\\BlogASP.NET\\BlogASP.NET\\BlogASP.NET.csproj",
+        "projectUniqueName": "E:\\!!!Projects\\!BlogASP.NET Core\\BlogASP.NET\\BlogASP.NET.csproj",
         "projectName": "BlogASP.NET",
-        "projectPath": "E:\\!!!Projects\\BlogASP.NET\\BlogASP.NET\\BlogASP.NET.csproj",
+        "projectPath": "E:\\!!!Projects\\!BlogASP.NET Core\\BlogASP.NET\\BlogASP.NET.csproj",
         "packagesPath": "C:\\Users\\campu\\.nuget\\packages\\",
-        "outputPath": "E:\\!!!Projects\\BlogASP.NET\\BlogASP.NET\\obj\\",
+        "outputPath": "E:\\!!!Projects\\!BlogASP.NET Core\\BlogASP.NET\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -43,6 +43,28 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
