@@ -13,5 +13,6 @@ namespace BlogASP.NET.Model
         public int? Likes { get; set; }
         public int? AuthorId { get; set; }
         public TimeSpan? PublishDate { get; set; }
+        public string Url { get; set; }
     }
 }

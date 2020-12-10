@@ -362,3 +362,4 @@ E:\!!!Projects\!BlogASP.NET Core\BlogASP.NET\obj\Debug\netcoreapp3.1\BlogASP.NET
 E:\!!!Projects\!BlogASP.NET Core\BlogASP.NET\obj\Debug\netcoreapp3.1\BlogASP.NET.dll
 E:\!!!Projects\!BlogASP.NET Core\BlogASP.NET\obj\Debug\netcoreapp3.1\BlogASP.NET.pdb
 E:\!!!Projects\!BlogASP.NET Core\BlogASP.NET\obj\Debug\netcoreapp3.1\BlogASP.NET.genruntimeconfig.cache
+E:\!!!Projects\!BlogASP.NET Core\BlogASP.NET\obj\Debug\netcoreapp3.1\Razor\Views\Home\PostDetails.cshtml.g.cs
