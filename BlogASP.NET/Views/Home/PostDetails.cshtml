@@ -1,8 +1,13 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
     BlogASP.NET.Model.BlogASPNETContext _context = new BlogASP.NET.Model.BlogASPNETContext();
-
+    BlogASP.NET.Model.Post post = _context.Post.FirstOrDefault(post => post.Url == Context.Request.GetDisplayUrl());
+    BlogUser user = UserManager.FindByIdAsync(post.AuthorId.ToString()).Result;
 }
+@using Microsoft.AspNetCore.Http.Extensions
+@using Microsoft.AspNetCore.Identity
+@using BlogASP.NET.Areas.Identity.Data
+@inject UserManager<BlogASP.NET.Areas.Identity.Data.BlogUser> UserManager
 
 
 <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
@@ -10,9 +15,9 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
                 <div class="post-heading">
-                    <h1>Man must explore, and this is exploration at its greatest</h1>
-                    <h2 class="subheading">Problems look mighty small from 150 miles up</h2>
-                    <span class="meta">Posted by <a href="#">Start Bootstrap</a> on August 24, 2014</span>
+                    <h1>@post.Title</h1>
+                    <h2 class="subheading">@post.MiniText</h2>
+                    <span class="meta">Posted by <a href="#">@user.UserName</a> on @post.PublishDate</span>
                 </div>
             </div>
         </div>
@@ -23,7 +28,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p></p>
+                <p>@post.PostContent</p>
             </div>
         </div>
     </div>
